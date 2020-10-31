@@ -1,2 +1,2 @@
 # React-Counter-App
-Created with CodeSandbox
+A Small React, React-hooks Counter Project with an awesome bootsrap classes. Created in CodeSandBox
