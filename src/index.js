@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-//import bootstrap from "bootstrap";
-import Counters from "./components/counters";
+import App from "./components/App";
 
-ReactDOM.render(<Counters />, document.querySelector("#root"));
+ReactDOM.render(<App />, document.querySelector("#root"));
