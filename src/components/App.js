@@ -8,7 +8,7 @@ class App extends React.Component {
   state = {
     counters: [
       { id: 1, value: 0 },
-      { id: 2, value: 5 },
+      { id: 2, value: 0 },
       { id: 3, value: 0 },
       { id: 4, value: 0 }
     ]
@@ -38,7 +38,9 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Navbar />
+        <Navbar
+          totalCounters={this.state.counters.filter((c) => c.value > 0).length}
+        />
         <main className="container">
           <Counters
             counters={this.state.counters}
